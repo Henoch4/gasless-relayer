@@ -4,7 +4,7 @@ Submit relay requests and inspect execution records. A funded relayer is require
 
 ## Mainnet status
 
-Mainnet deployment is pending. The interface does not simulate transactions or balances.
+Contract on BOT Chain mainnet (677): [0x4ebab4a8542FFEdEDfe6e64e20Da38A5DC8Db8d7](https://scan.botchain.ai/address/0x4ebab4a8542FFEdEDfe6e64e20Da38A5DC8Db8d7).
 
 Wallet actions require BOT Chain mainnet, deployed bytecode, and a connected compatible wallet. Every action is simulated before a transaction review; only a subsequent wallet confirmation can send it.
 
@@ -19,11 +19,12 @@ Wallet actions require BOT Chain mainnet, deployed bytecode, and a connected com
 
 ## Contract interface
 
-`frontend/product.json` uses the ABI compiled from the current Solidity source.
+`frontend/product.json` uses the current-source ABI, matched against the deployed mainnet runtime bytecode. Explorer source publication is tracked separately.
 
 | Action | Contract signature |
 |---|---|
 | Submit a relay request | `relay(address,uint256,bytes,uint256,bytes)` |
+| Sponsor a signed request | `relayFor(address,address,uint256,bytes,uint256,bytes)` |
 | Set the relay fee (owner only) | `setRelayerFee(uint256)` |
 | Withdraw fees (owner only) | `withdrawFees()` |
 

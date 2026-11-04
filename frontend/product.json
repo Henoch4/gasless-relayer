@@ -1,9 +1,9 @@
 {
-  "abiSource": "pending-current-source",
+  "abiSource": "runtime-matched-current-source",
   "repo": "gasless-relayer",
   "brand": "GaslessRelayer",
   "summary": "Submit relay requests and inspect execution records. A funded relayer is required to provide a gas-sponsored service.",
-  "address": null,
+  "address": "0x4ebab4a8542FFEdEDfe6e64e20Da38A5DC8Db8d7",
   "owner": null,
   "abi": [
     {
